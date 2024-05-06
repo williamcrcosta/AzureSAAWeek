@@ -6,11 +6,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<<<<<<< HEAD
 ## 2024-05-06
 
 - Add comments and Informations of Deploy
 - Add files Deploy Lading-Zone Azure SAA Week.
 
+=======
+>>>>>>> 393732e36d5e6ac14a43106790af26307eed1229
 ## 2024-05-05
 
 - Create new directory with example-code.
