@@ -1,27 +1,35 @@
+# Variável de usuário do Windows
+# O valor padrão é "admin.windows"
 variable "win_username" {
-  description = "Windows node username"
+  description = "Nome de usuário do Windows"
   type        = string
-  # sensitive   = false
-  default = "admin.windows"
+  sensitive   = true # Marca como confidencial
+  default     = "admin.windows"
 }
 
+# Variável de senha do Windows
+# O valor padrão é "Passw@rd12345"
 variable "win_userpass" {
-  description = "Windows node password"
+  description = "Senha do Windows"
   type        = string
-  # sensitive   = true
-  default = "Passw@rd12345"
+  sensitive   = true # Marca como confidencial
+  default     = "Passw@rd12345"
 }
 
+# Variável de ambiente "adminsql"
+# O valor padrão é "adminsql"
 variable "adminsql" {
-  description = "value for adminsql"
+  description = "Valor para a variável de ambiente 'adminsql'"
   type        = string
   default     = "adminsql"
-  //sensitive = true
+  sensitive = true # Marca como confidencial
 }
 
+# Variável de ambiente "passwordsql"
+# O valor padrão é a senha do Windows
 variable "passwordsql" {
-  description = "value for passwordsql"
+  description = "Valor para a variável de ambiente 'passwordsql'"
   type        = string
-  default     = variables.win_userpass
-  //sensitive = truey
+  default     = var.win_userpass
+  sensitive = true # Marca como confidencial
 }
