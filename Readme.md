@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 2024-05-06
 
-- Add comments and Informations of Deploy
+- Add comments and Info of Deploy
 - Add files Deploy Lading-Zone Azure SAA Week.
 
 ## 2024-05-05
