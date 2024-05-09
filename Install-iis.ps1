@@ -17,8 +17,11 @@ wget "https://stodiskdesafio.blob.core.windows.net/saa/Sistema.zip" -OutFile C:\
 # Extrai os arquivos e adiciona no diretório wwwroot
 Expand-Archive C:\Sistema.zip -DestinationPath C:\
 
-Copy-Item -Path C:\Sistema\Dashboard -Destination C:\inetpub\wwwroot\
-Copy-Item -Path C:\Sistema\Sistema -Destination C:\inetpub\wwwroot\
+# Copia conteudo do diretório Sistema para pasta wwwroot
+Copy-Item -Path C:\Sistema\Dashboard -Destination C:\inetpub\wwwroot\ -Recurse
+
+# Copia conteudo do diretório Dashboard para pasta wwwroot
+Copy-Item -Path C:\Sistema\Sistema -Destination C:\inetpub\wwwroot\ -Recurse
 
 ##Expand-Archive C:\Users\Administrator\Downloads\Sistema.zip -DestinationPath C:\inetpub\wwwroot\
 
