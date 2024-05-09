@@ -42,10 +42,10 @@ New-Item –Path IIS:\AppPools\Sistema
 New-Item –Path IIS:\AppPools\Dashboard
 
 # Criar novo Web-Site
-New-Website -Name "Sistema" -Port 80 -PhysicalPath "C:\inetpub\wwwroot\Sistema\Sistema" -ApplicationPool "Sistema"
+New-Website -Name "Sistema" -Port 80 -PhysicalPath "C:\inetpub\wwwroot\Sistema" -ApplicationPool "Sistema"
 
 #Cra novo Web-Site
-New-Website -Name "Dashboard" -Port 8080 -PhysicalPath "C:\inetpub\wwwroot\Sistema\Dashboard" -ApplicationPool "Dashboard"
+New-Website -Name "Dashboard" -Port 8080 -PhysicalPath "C:\inetpub\wwwroot\Dashboard" -ApplicationPool "Dashboard"
 
 
 
