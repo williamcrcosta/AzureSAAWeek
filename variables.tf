@@ -3,8 +3,9 @@
 variable "win_username" {
   description = "Nome de usuário do Windows"
   type        = string
-  sensitive   = true # Marca como confidencial
-  default     = "admin.windows"
+  //sensitive   = true # Marca como confidencial
+  sensitive = false
+  default   = "admin.windows"
 }
 
 # Variável de senha do Windows
@@ -12,8 +13,9 @@ variable "win_username" {
 variable "win_userpass" {
   description = "Senha do Windows"
   type        = string
-  sensitive   = true # Marca como confidencial
-  default     = "Passw@rd12345"
+  //sensitive   = true # Marca como confidencial
+  sensitive = false
+  default   = "PassWD12345"
 }
 
 # Variável de ambiente "adminsql"
@@ -22,7 +24,8 @@ variable "adminsql" {
   description = "Valor para a variável de ambiente 'adminsql'"
   type        = string
   default     = "adminsql"
-  sensitive = true # Marca como confidencial
+  //sensitive   = true # Marca como confidencial
+  sensitive = false
 }
 
 # Variável de ambiente "passwordsql"
@@ -31,5 +34,14 @@ variable "passwordsql" {
   description = "Valor para a variável de ambiente 'passwordsql'"
   type        = string
   default     = var.win_userpass
-  sensitive = true # Marca como confidencial
+  //sensitive   = true # Marca como confidencial
+  sensitive = false
+}
+
+variable "tags" {
+  type = map(any)
+  default = {
+    Environment = "Local"
+    Project     = "SAA"
+  }
 }
