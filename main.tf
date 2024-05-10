@@ -5,14 +5,14 @@
 # A versão deve ser uma string que siga a especificação de versão do SemVer 2.0.0.
 terraform {
   required_providers {
-    azurerm = { # Provedor de recursos do Azure
+    azurerm = {                     # Provedor de recursos do Azure
       source  = "hashicorp/azurerm" # Fonte do provedor
-      version = ">=3.99.0" # Versão do provedor
+      version = ">=3.99.0"          # Versão do provedor
     }
 
-    random = { # Provedor de recursos random
+    random = {                     # Provedor de recursos random
       source  = "hashicorp/random" # Fonte do provedor
-      version = "3.6.0" # Versão do provedor
+      version = "3.6.0"            # Versão do provedor
     }
   }
 }
